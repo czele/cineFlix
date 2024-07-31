@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "cineFlix"
+  "defaultProject": "cineFlix",
+  "cli": {
+    "analytics": false
+  }
 }
