@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+    - "4200:4200"
+    volumes:
+    - .:/app
+    - /app/node_modules
+    command: ng serve --host 0.0.0.0 --poll 2000
+    # Executar na primeira vez para criar o projeto
+    #command: ng new cine
